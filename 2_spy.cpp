@@ -121,6 +121,7 @@ int main()
   basetime = rdtsc();
   int fd = open("./libcrypto.so", O_RDONLY);
   int arr[NUMBER_OF_ENCRYPTIONS];
+  printf("pid %d\n",getpid());
   char buffer[50];
   if(fd == -1){
       printf("can't open the file\n");
